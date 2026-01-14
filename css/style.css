@@ -1,10 +1,16 @@
+@import "./utils.css";
 
+.avatar {
+    width: 120px;
+    height: 120px;
+    position: relative
+}
 
 figure {
-    border: 2px solid yellow;
+    border: 2px solid var(--red);
     border-radius: 50%;
-    width: 96px;
-    height: 96px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -12,4 +18,14 @@ figure > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#code-vector {
+    position: absolute;
+    display: block;
+    top: 80%;
+    left: 120%;
+    width: 31px;
+    height: 25px;
+    transform: translateX(-50%);
 }
