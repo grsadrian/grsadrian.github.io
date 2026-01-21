@@ -1,0 +1,78 @@
+header.intro {
+  display: flex;
+  justify-content: center;
+  background-image: url("../assets/backgrounds/background-intro.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw;
+  margin-top: 7.5rem;
+}
+
+.avatar {
+  width: 7.5rem;
+  height: 7.5rem;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+figure.profile-photo {
+  border: 2px solid var(--red);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+figure.profile-photo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#code-vector {
+  position: absolute;
+  display: block;
+  top: 80%;
+  left: 84%;
+  width: 31px;
+  height: 25px;
+  transform: translateX(-50%);
+}
+
+section.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  gap: 5rem;
+}
+
+header.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.info-text-title {
+  margin-bottom: 1.25rem;
+}
+
+.info-text #hero {
+  max-width: 75ch;
+}
+
+ul.skills {
+  display: flex;
+  gap: 1rem;
+}
+
+li.skill-tag {
+  display: flex;
+  align-items: center;
+  background-color: var(--gray-400);
+  padding: 8px 16px;
+  border-radius: 36px;
+  gap: 8px;
+}
