@@ -11,7 +11,22 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* HEADER */
+header.intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-image: url("../assets/backgrounds/background-intro.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  margin-top: 7.5rem;
+}
+
 .avatar {
   width: 7.5rem;
   height: 7.5rem;
@@ -19,7 +34,7 @@ ul {
   margin-bottom: 80px;
 }
 
-figure {
+figure.profile-photo {
   border: 2px solid var(--red);
   border-radius: 50%;
   width: 100%;
@@ -27,7 +42,7 @@ figure {
   overflow: hidden;
 }
 
-figure > img {
+figure.profile-photo > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -41,17 +56,6 @@ figure > img {
   width: 31px;
   height: 25px;
   transform: translateX(-50%);
-}
-
-header.intro {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  background-image: url("../assets/backgrounds/background-intro.png");
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
-  margin-top: 7.5rem;
 }
 
 section.info {
@@ -93,5 +97,78 @@ li.skill-tag {
 
 .carret {
   position: absolute;
-  top: 115%;
+  top: 110%;
+}
+
+/* PROJETOS */
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 9rem;
+}
+
+section.projects {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+section.projects > header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+section.projects > header p {
+  order: -1;
+}
+
+ul.grid {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 0.75rem;
+  background-color: var(--gray-400);
+  border-radius: 12px;
+  width: 330px;
+  height: 280px;
+}
+
+figure.project-photo {
+  width: 306px;
+  height: 156px;
+  border-left: 16px solid;
+  border-top: 16px solid;
+  border-right: 16px solid;
+  border-radius: 8px;
+}
+
+figure.project-photo#imc-tracker {
+  border-color: var(--green);
+  background-color: var(--green);
+}
+
+figure.project-photo#penguins {
+  border-color: var(--blue);
+  background-color: var(--blue);
+}
+
+figure.project-photo#etch-a-sketch {
+  border-color: var(--purple);
+  background-color: var(--purple);
+}
+
+figure.project-photo > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0px 0px;
+  object-fit: cover;
 }
