@@ -19,10 +19,16 @@ a {
 main {
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 9rem;
 }
 
-/* HEADER */
-
-/* PROJETOS */
+/* SERVICES */
+.services-bg {
+  background-color: var(--gray-600);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
