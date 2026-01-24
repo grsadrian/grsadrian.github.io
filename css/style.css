@@ -26,3 +26,12 @@ main {
   align-items: center;
   margin-top: 9rem;
 }
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  background-image: url("../assets/backgrounds/background-contacts.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+}

@@ -3,6 +3,7 @@ section.education {
   flex-direction: column;
   align-items: center;
   gap: 3.5rem;
+  margin-bottom: 9rem;
 }
 
 section.education header {
