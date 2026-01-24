@@ -1,6 +1,7 @@
 @import "./utils.css";
 @import "./intro.css";
 @import "./projects.css";
+@import "./services.css";
 
 * {
   box-sizing: border-box;
@@ -23,12 +24,4 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 9rem;
-}
-
-/* SERVICES */
-.services-bg {
-  background-color: var(--gray-600);
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
