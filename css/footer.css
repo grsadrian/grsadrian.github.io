@@ -1,0 +1,108 @@
+footer {
+  display: flex;
+  justify-content: center;
+  background-image: url("../assets/backgrounds/background-contacts.png");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  margin-bottom: 48px;
+  width: 100vw;
+}
+
+section.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+section.contacts .text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 8px;
+}
+
+p#contacts-subtitle {
+  order: -1;
+}
+
+ul.contacts-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 68px;
+  background-color: var(--gray-400);
+  padding: 20px;
+  gap: 12px;
+  border-radius: 8px;
+}
+
+.link-icon {
+  margin-left: auto;
+}
+
+.icon-svg {
+  width: 28px;
+  height: 28px;
+  background-color: var(--gray-300);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  transition: background-color 0.3s ease;
+}
+
+#icon-linkedin {
+  mask-image: url(../assets/icons/social/linkedin.svg);
+}
+
+#icon-github {
+  mask-image: url(../assets/icons/social/github.svg);
+}
+
+#icon-whatsapp {
+  mask-image: url(../assets/icons/social/whatsapp.svg);
+}
+
+#icon-email {
+  mask-image: url(../assets/icons/social/email.svg);
+}
+
+.social-button:hover #icon-linkedin {
+  background-color: var(--blue);
+}
+
+.social-button:hover #icon-github {
+  background-color: var(--gray-100);
+}
+
+.social-button:hover #icon-whatsapp {
+  background-color: var(--green);
+}
+
+.social-button:hover #icon-email {
+  background-color: var(--yellow);
+}
+
+#button-linkedin:hover {
+  outline: 2px solid var(--blue);
+}
+
+#button-github:hover {
+  outline: 2px solid var(--gray-100);
+}
+
+#button-whatsapp:hover {
+  outline: 2px solid var(--green);
+}
+
+#button-email:hover {
+  outline: 2px solid var(--yellow);
+}

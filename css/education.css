@@ -7,6 +7,9 @@ section.education {
 }
 
 section.education header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   text-align: center;
 }
 
@@ -15,7 +18,7 @@ section.education header {
   flex: 1;
   flex-direction: column;
   background-color: var(--gray-600);
-  padding: 24px 12px 0px 12px;
+  padding: 24px 12px 12px 12px;
   border-radius: 6px;
   width: 250px;
   height: 180px;
