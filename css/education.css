@@ -1,0 +1,33 @@
+section.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+section.education header {
+  text-align: center;
+}
+
+.education-card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: var(--gray-600);
+  padding: 24px 12px 0px 12px;
+  border-radius: 6px;
+  width: 250px;
+  height: 180px;
+}
+
+.graduation-course::before {
+  content: url(../assets/icons/graduation-cap.svg);
+}
+
+.free-course::before {
+  content: url(../assets/icons/certificate.svg);
+}
+
+.course-institution {
+  margin-top: auto;
+}

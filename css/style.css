@@ -2,6 +2,7 @@
 @import "./intro.css";
 @import "./projects.css";
 @import "./services.css";
+@import "./education.css";
 
 * {
   box-sizing: border-box;
