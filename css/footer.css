@@ -9,14 +9,14 @@ footer {
   width: 100vw;
 }
 
-section.contacts {
+section#contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 48px;
 }
 
-section.contacts .text {
+section#contacts .text {
   display: flex;
   flex-direction: column;
   text-align: center;

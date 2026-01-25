@@ -1,4 +1,4 @@
-section.education {
+section#education {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,7 +6,7 @@ section.education {
   margin-bottom: 9rem;
 }
 
-section.education header {
+section#education header {
   display: flex;
   flex-direction: column;
   gap: 8px;
