@@ -1,0 +1,18 @@
+nav {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+#nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#nav-menu a {
+  padding: 20px 10px;
+  font-size: 1.1rem;
+}
