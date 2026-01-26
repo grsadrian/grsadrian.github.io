@@ -5,6 +5,7 @@
 @import "./education.css";
 @import "./footer.css";
 @import "./navbar.css";
+@import "./modal.css";
 
 * {
   box-sizing: border-box;

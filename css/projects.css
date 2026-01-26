@@ -32,6 +32,7 @@ ul.grid {
   border-radius: 12px;
   width: 330px;
   height: 280px;
+  cursor: pointer;
 }
 
 .project-card:hover {
