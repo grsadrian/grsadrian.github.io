@@ -1,0 +1,77 @@
+.modal-container {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0.1px;
+  z-index: 999;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+}
+
+.modal {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: var(--gray-500);
+  border-radius: 12px;
+  height: 250px;
+  width: 30%;
+  border: 2px solid var(--gray-300);
+  box-shadow:
+    rgba(64, 64, 64, 0.25) 0px 54px 55px,
+    rgba(129, 129, 129, 0.12) 0px -12px 30px,
+    rgba(116, 116, 116, 0.12) 0px 4px 6px,
+    rgba(147, 147, 147, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.active {
+  display: flex;
+}
+
+.active .modal {
+  animation: modal 0.4s;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.modal-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 150px;
+  background-color: var(--gray-400);
+  padding: 12px;
+  border-radius: 8px;
+  border: 0px;
+  color: var(--gray-200);
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.3s ease;
+}
+
+.modal-buttons a#repo-btn:hover {
+  box-shadow: 0 0 0 2px var(--gray-100);
+}
+
+.modal-buttons a#project-btn:hover {
+  box-shadow: 0 0 0 2px var(--purple);
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
