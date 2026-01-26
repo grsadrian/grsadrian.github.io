@@ -14,7 +14,7 @@
   </head>
   <body style="background-color: var(--gray-500)">
     <nav>
-      <a class="title-sm gray-200"href="#">Adrian Silva</a>
+      <a class="title-sm gray-200" href="#">Adrian Silva</a>
       <ul id="nav-menu">
         <li>
           <a class="subtitle gray-200" href="#projects">Projetos</a>
@@ -107,56 +107,51 @@
           <p class="subtitle red">Meu trabalho</p>
         </header>
         <ul class="grid">
-          <li>
-            <a
-              href="https://grsadrian.github.io/imc-tracker"
-              target="_blank"
-              class="project-card"
-            >
-              <figure class="project-photo" id="imc-tracker">
-                <img src="./assets/projects/imc-tracker.png" />
-              </figure>
-              <div class="project-text">
-                <h2 class="title-sm gray-100">IMC Tracker</h2>
-                <p class="text-sm gray-200">
-                  Calculadora de IMC responsiva e que exibe informações sobre
-                  seu peso
-                </p>
-              </div>
-            </a>
+          <li
+            class="project-card"
+            data-repository="https://github.com/grsadrian/imc-tracker"
+            data-live-preview="https://grsadrian.github.io/imc-tracker"
+          >
+            <figure class="project-photo" id="imc-tracker">
+              <img src="./assets/projects/imc-tracker.png" />
+            </figure>
+            <div class="project-text">
+              <h2 class="title-sm gray-100">IMC Tracker</h2>
+              <p class="text-sm gray-200">
+                Calculadora de IMC responsiva e que exibe informações sobre seu
+                peso
+              </p>
+            </div>
           </li>
-          <li>
-            <a
-              href="https://grsadrian.github.io/penguins"
-              target="_blank"
-              class="project-card"
-            >
-              <figure class="project-photo" id="penguins">
-                <img src="./assets/projects/penguins.png" />
-              </figure>
-              <div class="project-text">
-                <h2 class="title-sm gray-100">Penguins</h2>
-                <p class="text-sm gray-200">
-                  Landing page que mostra curiosidades sobre os pinguins
-                </p>
-              </div>
-            </a>
+          <li
+            class="project-card"
+            data-repository="https://github.com/grsadrian/penguins"
+            data-live-preview="https://grsadrian.github.io/penguins"
+          >
+            <figure class="project-photo" id="penguins">
+              <img src="./assets/projects/penguins.png" />
+            </figure>
+            <div class="project-text">
+              <h2 class="title-sm gray-100">Penguins</h2>
+              <p class="text-sm gray-200">
+                Landing page que mostra curiosidades sobre os pinguins
+              </p>
+            </div>
           </li>
-          <li>
-            <a
-              href="https://grsadrian.github.io/etch-a-sketch"
-              class="project-card"
-            >
-              <figure class="project-photo" id="etch-a-sketch">
-                <img src="./assets/projects/etch-a-sketch.png" />
-              </figure>
-              <div class="project-text">
-                <h2 class="title-sm gray-100">Etch A Sketch</h2>
-                <p class="text-sm gray-200">
-                  Tabuleiro de desenho onde você pode esbanjar sua criatividade
-                </p>
-              </div>
-            </a>
+          <li
+            class="project-card"
+            data-repository="https://github.com/grsadrian/etch-a-sketch"
+            data-live-preview="https://grsadrian.github.io/etch-a-sketch"
+          >
+            <figure class="project-photo" id="etch-a-sketch">
+              <img src="./assets/projects/etch-a-sketch.png" />
+            </figure>
+            <div class="project-text">
+              <h2 class="title-sm gray-100">Etch A Sketch</h2>
+              <p class="text-sm gray-200">
+                Tabuleiro de desenho onde você pode esbanjar sua criatividade
+              </p>
+            </div>
           </li>
         </ul>
       </section>
@@ -298,5 +293,24 @@
         </ul>
       </section>
     </footer>
+    <div class="modal-container">
+      <div class="modal">
+        <h2 class="title-md gray-100">O que você deseja ver?</h2>
+        <div class="modal-buttons">
+          <a id="project-btn" class="text-md gray-200" href="" target="_blank">
+            <img
+              style="width: 28px; height: 28px"
+              src="./assets/icons/devices.svg"
+            />
+            <p class="text-md gray-100">Projeto</p>
+          </a>
+          <a id="repo-btn" href="" target="_blank">
+            <img src="./assets/icons/social/github.svg" />
+            <p class="text-md gray-100">Repositório</p>
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="./js/script.js"></script>
 </html>

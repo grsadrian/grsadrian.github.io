@@ -1,12 +1,20 @@
 .modal-container {
   display: none;
-  width: 100vw;
-  height: 100vh;
   position: fixed;
-  top: 0.1px;
-  z-index: 999;
-  justify-content: center;
+  inset: 0;
   backdrop-filter: blur(6px);
+}
+
+.modal-container {
+  position: fixed;
+  margin: 0 auto;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 30vh;
 }
 
 .modal {
@@ -63,6 +71,10 @@
 
 .modal-buttons a#project-btn:hover {
   box-shadow: 0 0 0 2px var(--purple);
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 @keyframes modal {
