@@ -59,6 +59,10 @@ header.info {
   margin-bottom: 1.25rem;
 }
 
+span.red {
+  display: inline-block;
+}
+
 .info-text #hero {
   max-width: 75ch;
 }
@@ -75,4 +79,33 @@ li.skill-tag {
   padding: 8px 16px;
   border-radius: 36px;
   gap: 8px;
+}
+
+@media (max-width: 1060px) {
+  ul.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  ul.skills {
+    background-color: rgba(0, 0, 0, 0.373);
+    border-radius: 12px;
+    border: 2px solid var(--gray-300);
+    padding: 24px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 380px) {
+    .info-text-title p {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 350px) {
+    ul.skills {
+      border: none;
+    }
+  }
 }
