@@ -77,3 +77,9 @@ figure.project-photo > img {
   padding: 4px;
   flex-direction: column;
 }
+
+@media (max-width: 1050px) {
+  ul#projects-grid {
+    flex-direction: column;
+  }
+}
