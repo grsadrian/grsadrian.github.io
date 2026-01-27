@@ -1,4 +1,4 @@
-nav {
+nav.header-nav {
   max-width: 1000px;
   display: flex;
   justify-content: space-between;
@@ -13,6 +13,67 @@ nav {
 }
 
 #nav-menu a {
-  padding: 20px 10px;
+  padding: 12px 10px;
   font-size: 1.1rem;
+}
+
+#sidebar {
+  display: none;
+}
+
+button#list-menu {
+  display: none;
+}
+
+button#close-menu > span,
+button#list-menu > span {
+  padding: 16px 0px;
+}
+
+@media (max-width: 760px) {
+  #nav-menu {
+    display: none;
+  }
+
+  button#list-menu {
+    display: block;
+  }
+
+  button#close-menu {
+    align-self: flex-end;
+  }
+
+  button#list-menu,
+  button#close-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  #sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 100vh;
+    padding: 24px;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.247);
+    backdrop-filter: blur(10px);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 10;
+  }
+
+  #sidebar.active {
+    transform: translateX(0);
+  }
+
+  #sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
 }

@@ -1,4 +1,11 @@
 const projectCards = document.querySelectorAll(".project-card");
+const sidebar = document.querySelector("#sidebar");
+const listMenu = document.querySelector("#list-menu");
+const closeMenu = document.querySelector("#close-menu");
+
+listMenu.addEventListener("click", showSidebar);
+closeMenu.addEventListener("click", hideSidebar);
+
 projectCards.forEach((card) => {
   card.addEventListener("click", openModal);
 });
@@ -23,4 +30,12 @@ function closeModal(event) {
     this.classList.remove("active");
     document.body.classList.remove("no-scroll");
   }
+}
+
+function showSidebar() {
+  sidebar.classList.add("active");
+}
+
+function hideSidebar() {
+  sidebar.classList.remove("active");
 }
