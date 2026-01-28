@@ -35,3 +35,9 @@ section#education header {
 .course-institution {
   margin-top: auto;
 }
+
+@media (max-width: 530px) {
+  #education-grid {
+    flex-direction: column;
+  }
+}
