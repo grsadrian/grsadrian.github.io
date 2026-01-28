@@ -88,6 +88,12 @@ body.no-scroll {
   }
 }
 
+@media (max-width: 650px) {
+  .modal {
+    width: 200px;
+  }
+}
+
 @keyframes modal {
   from {
     opacity: 0;
